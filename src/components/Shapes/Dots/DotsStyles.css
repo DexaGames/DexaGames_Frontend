@@ -1,0 +1,29 @@
+.dotWrapper{
+    position: relative;
+}
+
+.dotRow{
+    position: fixed;
+    bottom: 1rem;
+}
+
+.dotCol{
+    position: absolute;
+    top: 0rem;
+}
+
+.dotOne{
+    display: flex;
+}
+
+.dotTwo{
+    display: flex;
+} 
+
+.dot{
+    width: 3.5px;
+    height: 3.5px;
+    border-radius: 50%;
+    background: var(--yellow-color);
+    margin: .35rem;
+}

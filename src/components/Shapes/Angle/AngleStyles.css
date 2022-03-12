@@ -1,0 +1,41 @@
+.angleWrapper{
+    position: relative;
+}
+
+.angle{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    border: solid var(--yellow-color);
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+    animation: slide 4s linear infinite normal;
+}
+
+@keyframes slide {
+    0% { opacity:0; transform: translateX(15vw); }
+   10% { opacity:1; transform: translateX(9vw); }
+   80% { opacity:1; transform: translateX(-9vw); }
+  100% { opacity:0; transform: translateX(-15vw); }
+}
+
+
+.First{
+    
+}
+
+.Sec{
+    animation-delay: 1s;
+} 
+
+.Third{
+    animation-delay: 2s;
+} 
+
+.Fourth{
+    animation-delay: 3s;
+} 
+
+.Fifth{
+    animation-delay: 4s;
+} 
