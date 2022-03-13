@@ -1,0 +1,61 @@
+.sqrWrapper{
+    position: relative;
+}
+.sqr{
+    width: 2rem;
+    height: 2rem;
+    left: 0rem;
+    border: 1px solid var(--yellow-color);
+    transform: rotate(-45deg);
+    animation: rotation 12s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.sqrOne{
+    position: absolute;
+    display: flex;
+    top: 14rem;
+}
+
+.sqrTwo{
+    position: absolute;
+    display: flex;
+    top: 16rem;
+} 
+
+.sqrThree{
+    position: absolute;
+    display: flex;
+    top: 18rem;
+} 
+
+.sqrFour{
+    position: absolute;
+    display: flex;
+    top: 20rem;
+} 
+
+.sqrFive{
+    position: absolute;
+    display: flex;
+    top: 22rem;
+} 
+
+.sqrSix{
+    position: absolute;
+    display: flex;
+    top: 24rem;
+} 
+
+.filled{
+    background: var(--yellow-color);
+}
+
