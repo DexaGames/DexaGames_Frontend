@@ -1,0 +1,10 @@
+header{
+    padding: 1rem;
+    color: var(--white-color);
+    background: var(--black-color);
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
