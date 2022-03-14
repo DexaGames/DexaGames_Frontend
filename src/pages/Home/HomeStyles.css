@@ -2,3 +2,33 @@
     text-align: right;
     font-size: var(--font-twentyFour);
 }
+
+.homeWrapper{
+    background: var(--black-color);
+    height: 100vh;
+}
+
+.mainBox{
+    padding: 2rem 1rem;
+}
+
+.bodyText{
+    padding-top: 1rem;
+}
+
+.gameBlocks{
+    padding-top: 1rem;
+}
+
+.blockOne{
+    width: 100%;
+    height: 5rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    background: var(--yellow-color);
+}
+
+.blockTwo{
+
+}

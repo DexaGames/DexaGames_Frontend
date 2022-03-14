@@ -14,7 +14,7 @@
 
     /* FontStyle*/
     --fontOne: 'Poppins', sans-serif;
-    --fontTwo: 'augustbold';
+    --fontTwo: 'kool-beans';
     
 
     /* Font Sizes */
@@ -52,13 +52,13 @@ html {
     scroll-behavior: smooth;
 }
 
-/* @font-face {
-    font-family: 'augustbold';
-    src: url('../src/assets/august/august-bold-webfont.woff2') format('woff2'),
-         url('../src/assets/august/august-bold-webfont.woff') format('woff');
-    font-weight: normal;
+@font-face {
+    font-family: 'kool-beans';
+    src: url('../src/assets/Kool-beans-font/kool-beans.regular-webfont.woff2') format('woff2'),
+         url('../src/assets/Kool-beans-font/kool-beans.regular-webfont.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
-} */
+}
 
 /*--------------- [_Buttons] -------------*/
 /*Btn Style Max*/
@@ -82,7 +82,7 @@ h4, h5, h6{
 
 h2, h3,
 h4, h5, h6 {
-    color: var(--head-pri-color);
+    color: var(--white-color);
     font-family: var(--fontOne);
 }
 
@@ -97,7 +97,7 @@ h1 {
     line-height: 3rem;
     font-weight: 500;
     letter-spacing: 1px;
-    font-family: var(--fontOne);
+    font-family: var(--fontTwo);
 }
 
 h2 {
@@ -148,7 +148,7 @@ img {
 
 /* STyles for card hover */
 
-.card {
+/* .card {
     width: 250px;
     height: 196px;
     background: var(--white-color);
@@ -191,4 +191,4 @@ img {
   .card:hover img, .card:focus-within img{
     margin-top: -120px;
   }
-  
+   */
