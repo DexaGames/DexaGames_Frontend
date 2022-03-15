@@ -1,0 +1,74 @@
+.colorCircle{
+    position: relative;
+    height: 92%;
+    width: 100%;
+}
+
+.textContent{
+    position: absolute;
+    top: 50%;
+    width: 55%;
+    right: 0%;
+}
+
+.yellowCircle{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: var(--yellow-color);
+    position: absolute;
+    bottom: -4.5rem;
+    left: -.5rem;
+}
+
+.halfCircle{
+    width: 4rem;
+    height: 8rem;
+    border-radius: 150px 0 0 150px;
+    background: var(--yellow-color);
+    position: absolute;
+    right: 0rem;
+}
+
+.halfCircleTwo{
+    width: 4rem;
+    height: 8rem;
+    border-radius: 150px 0 0 150px;
+    background: var(--yellow-color);
+    position: absolute;
+    left: 5rem;
+    transform: rotate(90deg) translate(120%);
+    top: 20%;
+}
+
+.quater{
+    position: absolute;
+    bottom: 5rem;
+    right: 3rem;
+}
+
+.quaterCircle{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0 0 0 150px;
+    background: var(--yellow-color);
+    position: absolute;
+    top: 4rem;
+    transform: rotate(180deg);
+}
+
+.quaterCircleTwo{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0 0 0 150px;
+    background: var(--yellow-color);
+}
+
+.squareCirlce{
+    width: 5rem;
+    height: 5rem;
+    background: var(--yellow-color);
+    position: absolute;
+    top: 0rem;
+    left: 1rem;
+}
