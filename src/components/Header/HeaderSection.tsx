@@ -1,4 +1,4 @@
-import 
+
 import "./HeaderStyles.css";
 import Hamburger from "./OffCanvasMenu";
 

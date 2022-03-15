@@ -11,10 +11,11 @@ export default function LandingPage () {
                 <Circle />
                 <Dots />
                 <Square />
+                {/* <Angle /> */}
             </div>
             <div className="words">
                 <h1 className="head">DexaGames</h1>
-                <h1 className="explore">Explore new games with us!</h1>
+                <h2 className="explore">Explore new games with us!</h2>
                 <a href="./home" className="next">Next</a>
             </div>
         </div>

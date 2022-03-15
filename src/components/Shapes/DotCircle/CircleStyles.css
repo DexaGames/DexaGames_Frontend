@@ -10,6 +10,17 @@
     left: -1.5rem;
     border-radius: 50%;
     border: 2px dotted var(--yellow-color);
+    transform: rotate(45deg);
+    animation: circle 5s linear infinite;
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 .cirFour{
@@ -20,4 +31,15 @@
     left: -4rem;
     border-radius: 50%;
     border: 2px dotted var(--yellow-color);
-} 
+    transform: rotate(45deg);
+    animation: circle 5s linear infinite;
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

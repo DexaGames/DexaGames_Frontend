@@ -12,30 +12,124 @@
     animation: slide 4s linear infinite normal;
 }
 
-@keyframes slide {
+/* @keyframes slide {
     0% { opacity:0; transform: translateX(15vw); }
    10% { opacity:1; transform: translateX(9vw); }
    80% { opacity:1; transform: translateX(-9vw); }
   100% { opacity:0; transform: translateX(-15vw); }
+} */
+
+
+.First, .Sec, .Third, .Fourth, .Fifth,
+.Sixth, .Seventh, .Eighth, .Nineth, .Tenth{
+    position: absolute;
+    animation-duration: 16s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-
 .First{
-    
+    top: 80px;
+    left: -10px;
+    animation-name: first;
 }
 
 .Sec{
-    animation-delay: 1s;
+    top: 170px;
+    left: 0px;
+    transform: rotate(45deg);
+    animation-name: sec;
 } 
 
 .Third{
-    animation-delay: 2s;
+    top: 100px;
+    left: 80px;
+    transform: rotate(-45deg);
+    animation-name: Third;
 } 
 
 .Fourth{
-    animation-delay: 3s;
+    top: 130px;
+    left: 50px;
+    transform: rotate(-50deg);
+    animation-name: Fourth;
 } 
 
 .Fifth{
-    animation-delay: 4s;
+    top: 160px;
+    left: 40px;
+    transform: rotate(45deg);
+    animation-name: Fifth;
 } 
+
+.Sixth{
+    top: 100px;
+    left: 90px;
+    transform: rotate(-45deg);
+    animation-name: Sixth;
+}
+
+.Seventh{
+    top: 100px;
+    left: 80px;
+    transform: rotate(-45deg);
+    animation-name: Seventh;
+}
+
+.Eighth{
+    top: 100px;
+    left: 80px;
+    transform: rotate(-45deg);
+    animation-name: Eighth;
+}
+
+.Nineth{
+    top: 100px;
+    left: 80px;
+    transform: rotate(-45deg);
+    animation-name: Nineth;
+}
+
+.Tenth{
+    top: 100px;
+    left: 80px;
+    transform: rotate(-45deg);
+    animation-name: Tenth;
+}
+
+@keyframes First {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes Sec {
+    0% {
+        transform: rotate(-45deg);
+    }
+    25% {
+        transform: rotate(-35deg);
+    }
+    50% {
+        transform: rotate(-45deg);
+    }
+    75% {
+        transform: rotate(-55deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
