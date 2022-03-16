@@ -6,7 +6,7 @@
 
 /* FIRST PAGE */
 .firstPage{
-    display: none;
+    display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
@@ -30,8 +30,9 @@
 }
 
 .next{
-    display: block;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     color: var(--yellow-color);
 }
 
@@ -43,7 +44,7 @@
 .secondPage{
    height: 100%;
     width: 100%;
-    display: block;
+    display: none;
 }
 
 .shapesTwo{
@@ -53,7 +54,3 @@
     flex-direction: column;
 }
 
-.started{
-    margin: 0 0 0 auto;
-    padding: 1rem;
-}

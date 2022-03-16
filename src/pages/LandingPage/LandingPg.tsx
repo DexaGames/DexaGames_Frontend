@@ -26,7 +26,6 @@ export default function LandingPage () {
             <section className="secondPage">
                 <div className="shapesTwo">
                     <CircleFilled />
-                    <a href="./home" className="started">Get Started <MdNavigateNext fill="yellow"/></a>
                 </div>
             </section>
         </div>
