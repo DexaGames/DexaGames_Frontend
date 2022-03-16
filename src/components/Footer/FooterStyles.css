@@ -1,0 +1,11 @@
+footer{
+    border-top: 1px solid grey;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.footerText{
+    font-size: var(--font-fourteen);
+    margin: 0 auto;
+}

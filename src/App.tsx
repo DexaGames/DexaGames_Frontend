@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Home from './pages/Home/HomePage';
 import LandingPage from './pages/LandingPage/LandingPg';

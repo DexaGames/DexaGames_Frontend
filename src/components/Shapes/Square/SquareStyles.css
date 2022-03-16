@@ -1,6 +1,8 @@
 .sqrWrapper{
     position: relative;
+    top: 0%;
 }
+
 .sqr{
     width: 2rem;
     height: 2rem;

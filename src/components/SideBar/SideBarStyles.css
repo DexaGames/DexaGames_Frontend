@@ -1,0 +1,24 @@
+
+@media screen and (min-width: 900px) {
+    .sideBarWrap{
+        border-right: 1px solid grey;
+        height: 100%;
+    }
+
+    .sideList{
+        display: flex;
+        padding-top: 2rem;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .sideItem{
+        margin-bottom: 2rem;
+    }
+
+    .sideItem a{
+        color: var(--white-color);
+        font-size: var(--font-twentyFour);
+    }
+}

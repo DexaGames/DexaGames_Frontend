@@ -10,6 +10,8 @@
     --black-color: #000315;
     --grey-color: #D9D9D9;
     --yellow-color: #ffde3e;
+    --red-color: #AB2121;
+
   /* #FFD60D */
 
     /* FontStyle*/
@@ -18,7 +20,7 @@
     
 
     /* Font Sizes */
-    --font-fourtyTwo: 2rem;
+    --font-fourtyTwo: 2.2rem;
     --font-thirtyTwo: 1.35rem;
     --font-twentyFour: 1.25rem;
     --font-eighteen: 1.125rem;
@@ -109,7 +111,7 @@ h2 {
 h3 {
     font-size: var(--font-eighteen);
     line-height: 2rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h4 {

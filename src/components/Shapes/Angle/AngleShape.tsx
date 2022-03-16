@@ -3,16 +3,20 @@ import "./AngleStyles.css"
 export default function Angle () {
     return(
         <div className="angleWrapper">
-            <h3 className="First">1</h3>
-            <h3 className="Sec">A</h3>
-            <h3 className="Third">2</h3>
-            <h3 className="Fourth">B</h3>
-            <h3 className="Fifth">3</h3>
-            <h3 className="Sixth">C</h3>
-            <h3 className="Seventh">4</h3>
-            <h3 className="Eighth">D</h3>
-            <h3 className="Nineth">5</h3>
-            <h3 className="Tenth">10</h3>
+            <h3 className="n0">0</h3>
+            <h3 className="n1">N</h3>
+            <h3 className="m0">1</h3>
+            <h3 className="m1">U</h3>
+            <h3 className="o0">2</h3>
+            <h3 className="o1">M</h3>
+            <h3 className="p0">3</h3>
+            <h3 className="p1">L</h3>
+            <h3 className="q0">4</h3>
+            <h3 className="q1">O</h3>
+            <h3 className="r0">5</h3>
+            <h3 className="r1">C</h3>
+            <h3 className="s0">6</h3>
+            <h3 className="s1">K</h3>
         </div>
 
     )
