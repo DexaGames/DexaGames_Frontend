@@ -6,8 +6,9 @@ export default function Header () {
     return (
         <header>
             <nav className="navBar">
+                {/* <Hamburger /> */}
                 <FaGithub size="24px"/>
-                <h1 className="head">DexaGames</h1>
+                <h4 className="head">DexaGames</h4>
             </nav>
         </header>
     )

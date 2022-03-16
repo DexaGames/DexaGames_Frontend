@@ -9,3 +9,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
+.head{
+    color: var(--black-color);
+}

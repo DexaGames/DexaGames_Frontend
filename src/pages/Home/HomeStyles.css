@@ -1,6 +1,6 @@
 .head{
     text-align: right;
-    font-size: var(--font-twentyFour);
+    font-size: var(--font-eighteen);
 }
 
 .homeWrapper{
@@ -24,6 +24,7 @@
 
 .headText{
     padding-top: 2rem;
+    font-size: var(--font-eighteen);
 }
 
 .bodyText{

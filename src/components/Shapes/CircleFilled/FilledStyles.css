@@ -25,7 +25,7 @@
     width: 4rem;
     height: 8rem;
     border-radius: 150px 0 0 150px;
-    background: var(--yellow-color);
+    background: var(--violet-color);
     position: absolute;
     right: 0rem;
 }
@@ -34,7 +34,7 @@
     width: 4rem;
     height: 8rem;
     border-radius: 150px 0 0 150px;
-    background: var(--yellow-color);
+    background: var(--liteBlue-color);
     position: absolute;
     left: 5rem;
     transform: rotate(90deg) translate(120%);
@@ -43,7 +43,7 @@
 
 .quater{
     position: absolute;
-    bottom: 5rem;
+    bottom: 4rem;
     right: 3rem;
 }
 
@@ -51,9 +51,9 @@
     width: 3rem;
     height: 3rem;
     border-radius: 0 0 0 150px;
-    background: var(--yellow-color);
+    background: var(--darkRed-color);
     position: absolute;
-    top: 4rem;
+    top: 3rem;
     transform: rotate(180deg);
 }
 
@@ -61,14 +61,53 @@
     width: 3rem;
     height: 3rem;
     border-radius: 0 0 0 150px;
-    background: var(--yellow-color);
+    background: var(--peach-color);
 }
 
 .squareCirlce{
     width: 5rem;
     height: 5rem;
-    background: var(--yellow-color);
+    background: var(--orange-color);
     position: absolute;
     top: 0rem;
     left: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+    .yellowCircle{
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    .halfCircle{
+        width: 6rem;
+        height: 10rem;
+    }
+    
+    .halfCircleTwo{
+        width: 6rem;
+        height: 10rem;
+    }
+
+    .quater{
+        bottom: 4rem;
+        right: 3rem;
+    }
+    
+    
+    .quaterCircle{
+        width: 6rem;
+        height: 6rem;
+        top: 5rem;
+    }
+    
+    .quaterCircleTwo{
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .squareCirlce{
+        width: 10rem;
+        height: 10rem;
+    }
 }
