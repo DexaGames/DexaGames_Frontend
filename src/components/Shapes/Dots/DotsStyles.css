@@ -24,6 +24,14 @@
     width: 3.5px;
     height: 3.5px;
     border-radius: 50%;
-    background: var(--orange-color);
+    background: var(--yellow-color);
     margin: .35rem;
+}
+
+@media screen and (min-width: 700px) {
+    .dot{
+        width: 5px;
+        height: 5px;
+        margin: .5rem;
+    }
 }

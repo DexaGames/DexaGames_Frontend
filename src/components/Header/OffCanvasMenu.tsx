@@ -1,12 +1,11 @@
-import Offcanvas from 'react-bootstrap/Offcanvas'
-import {Nav, NavDropdown, Navbar, Container} from 'react-bootstrap'
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import {Nav, NavDropdown, Navbar, Container} from 'react-bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import "./OffCanvasStyles.css";
 
 function Hamburger() {
     return (
-      <>
+      <div className='navWrapper'>
         <Navbar bg="" expand={false}>
             <Container fluid>
                 <Navbar.Toggle aria-controls="offcanvasNavbar"/>
@@ -30,7 +29,7 @@ function Hamburger() {
                 </Navbar.Offcanvas>
             </Container>
         </Navbar>
-      </>
+      </div>
     );
   }
 export default Hamburger

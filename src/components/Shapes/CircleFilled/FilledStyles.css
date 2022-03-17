@@ -7,7 +7,7 @@
 .textContent{
     position: absolute;
     top: 45%;
-    width: 80%;
+    width: 60%;
     right: 0%;
 }
 
@@ -86,22 +86,23 @@
     .textContent{
         position: absolute;
         top: 45%;
-        width: 65%;
+        width: 50%;
         right: 0%;
     }
+
     .yellowCircle{
-        width: 12rem;
-        height: 12rem;
+        width: 8rem;
+        height: 8em;
     }
     
     .halfCircle{
-        width: 6rem;
-        height: 10rem;
+        width: 4rem;
+        height: 8rem;
     }
     
     .halfCircleTwo{
-        width: 6rem;
-        height: 10rem;
+        width: 4rem;
+        height: 8rem;
         display: block;
     }
 
@@ -123,7 +124,7 @@
     }
     
     .squareCirlce{
-        width: 12rem;
-        height: 12rem;
+        width: 8rem;
+        height: 8rem;
     }
 }

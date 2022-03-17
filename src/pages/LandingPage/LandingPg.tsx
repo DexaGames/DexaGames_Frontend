@@ -5,6 +5,7 @@ import Square from "../../components/Shapes/Square/SquareShape"
 import "./LandingStyles.css"
 import {MdNavigateNext} from 'react-icons/md';
 import CircleFilled from "../../components/Shapes/CircleFilled/FilledCircle"
+import DifferentShapes from "../../components/Shapes/Spice/ShapesDiffer"
 
 export default function LandingPage () {
     return (
@@ -12,14 +13,13 @@ export default function LandingPage () {
             <section className="firstPage">
                 <div className="shapes">
                     <Circle />
+                    <DifferentShapes />
                     <Dots />
-                    <Square />
-                    {/* <Angle /> */}
                 </div>
                 <div className="words">
                     <h1 className="head">DexaGames</h1>
                     <h2 className="explore">Explore new games with us!</h2>
-                    <a href="/secondPage" className="next">Next <MdNavigateNext fill="yellow"/></a>
+                    <a href="./secondPage" className="next">Next <MdNavigateNext fill="yellow"/></a>
                 </div>
             </section>
 

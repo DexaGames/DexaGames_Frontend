@@ -1,0 +1,9 @@
+.navWrapper{
+    display: block;
+}
+
+@media screen and (min-width:900px) {
+    .navWrapper{
+        display: none;
+    }
+}

@@ -1,7 +1,8 @@
 header{
     padding: 1rem;
-    color: var(--black-color);
-    background: var(--yellow-color);
+    color: var(--white-color);
+    background: var(--bg-color);
+    height: 10%;
 }
 
 .navBar{
@@ -11,5 +12,5 @@ header{
 }
 
 .head{
-    color: var(--black-color);
+    color: var(--white-color);
 }

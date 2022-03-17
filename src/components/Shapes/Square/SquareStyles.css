@@ -1,6 +1,6 @@
 .sqrWrapper{
     position: relative;
-    top: 0%;
+    top: -5%;
 }
 
 .sqr{
@@ -61,3 +61,41 @@
     background: var(--yellow-color);
 }
 
+@media screen and (min-width: 700px) {
+    
+    .sqrWrapper{
+        left: 5%;
+    }
+
+    .sqr{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .sqrTwo{
+        top: 18rem;
+    }
+
+    .sqrThree{
+        top: 22rem;
+    }
+
+    .sqrFour{
+        top: 26rem;
+    }
+
+    .sqrFive{
+        top: 30rem;
+    }
+
+    .sqrSix{
+        top: 34rem;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .sqrWrapper{
+        left: 25%;
+        top: 10%;
+    }
+}

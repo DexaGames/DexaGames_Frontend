@@ -4,14 +4,14 @@
 }
 
 .homeWrapper{
-    background: var(--black-color);
-    height: 100%;
+    background: var(--white-color);
+    height: 100vh;
+    color: var(--black-color);
 }
 
 .contentWrapper{
-    display: grid;
-    grid-template-columns: 100%;
-    height: 100vh;
+    display: block;
+    height: 100%;
 }
 
 .sideBox{
@@ -19,12 +19,23 @@
 }
 
 .mainBox{
+    height: 90%;
+}
+
+.contentWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gameWrapper{
     padding: 1rem;
 }
 
 .headText{
     padding-top: 2rem;
     font-size: var(--font-eighteen);
+    color: var(--black-color);
 }
 
 .bodyText{
@@ -52,13 +63,14 @@
 
 .blockDetails{
     width: 40%;
-    background-color: var(--yellow-color);
+    max-height: 15rem;
+    height: 100%;
     padding: 1rem;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
 }
 
 .blockContent{
-    width: 60%;
+    width: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -66,7 +78,6 @@
 }
 
 .headIcon{
-    position: relative;
     padding: 2rem 0;
 }
 
@@ -80,30 +91,37 @@
     position: relative;
 }
 
+.violet{
+    background: var(--violet-color);
+}
+
+.peach{
+    background: var(--peach-color);
+}
+
+.orange{
+    background: var(--orange-color);
+}
+
 @media screen and (min-width: 550px) {
     .blockDetails{
-        width: 25%;
-    }
-    .blockContent{
-        width: 75%;
+        width: 40%;
     }
 
-    .mainBox{
+    .gameWrapper{
         padding: 2rem;
     }
 }
 
 @media screen and (min-width: 900px) {
-    .contentWrapper{
+    .mainBox{
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 20% 80%;
+        height: 90%;
     }
 
     .sideBox{
         display: block;
-        padding: 2rem;
     }
 
-    .mainBox{
-    }
 }

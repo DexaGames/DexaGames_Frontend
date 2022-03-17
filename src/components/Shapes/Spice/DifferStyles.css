@@ -1,0 +1,84 @@
+.boxOne{
+    width: 45%;
+    height: 1rem;
+    background: var(--liteBlue-color);
+    position: absolute;
+    top: 60%;
+    right: 0%;
+}
+.boxTwo{
+    width: 45%;
+    height: 1rem;
+    background: var(--orange-color);
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+.boxThree{
+    width: 45%;
+    height: 1rem;
+    background: var(--violet-color);
+    position: absolute;
+    top: 40%;
+    right: 0%;
+}
+
+.roundOne{
+    position: absolute;
+    top: 37.5%;
+    right: 20%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--yellow-color);
+    animation: roundOne linear 10s infinite alternate-reverse;
+}
+
+@keyframes roundOne {
+    from{
+        right: 45%;
+    }
+    to{
+        right: 0%;
+    }
+}
+
+.roundTwo{
+    position: absolute;
+    top: 47.5%;
+    left: 20%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--peach-color);
+    animation: roundTwo linear 10s infinite alternate-reverse;
+}
+
+@keyframes roundTwo {
+    from{
+        left: 45%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+.roundThree{
+    position: absolute;
+    top: 57.5%;
+    right: 20%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--darkRed-color);
+    animation: roundThree linear 10s infinite alternate-reverse;
+}
+
+@keyframes roundThree {
+    from{
+        right: 45%;
+    }
+    to{
+        right: 0%;
+    }
+}
