@@ -4,9 +4,14 @@
 }
 
 .homeWrapper{
-    background: var(--white-color);
+    background: var(--bg-color);
     height: 100vh;
-    color: var(--black-color);
+    color: var(--white-color);
+}
+
+.mainBox{
+    height: 90%;
+    border-top: 1px solid var(--grey-color);
 }
 
 .contentWrapper{
@@ -16,10 +21,6 @@
 
 .sideBox{
     display: none;
-}
-
-.mainBox{
-    height: 90%;
 }
 
 .contentWrapper{
@@ -35,7 +36,7 @@
 .headText{
     padding-top: 2rem;
     font-size: var(--font-eighteen);
-    color: var(--black-color);
+    color: var(--white-color);
 }
 
 .bodyText{
@@ -48,13 +49,94 @@
     flex-wrap: wrap;
 }
 
+.blockOne:hover,
+.blockTwo:hover,
+.blockThree:hover,
+.blockFour:hover,
+.blockFive:hover,
+.blockSix:hover{
+    transition:  ease-in-out .3s;
+}
+
 .blockOne{
     width: 100%;
-    height: 10rem;
-    border-radius: 10px;
-    margin: 1rem auto;
+    height: 12rem;
+    border-radius: 15px;
+    margin: 1rem;
     display: flex;
-    background: rgb(128 127 119 / 43%);
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(171 171 171 / 10%);
+    cursor: pointer;
+}
+
+.blockTwo{
+    width: 100%;
+    height: 12rem;
+    border-radius: 15px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(171 171 171 / 10%);
+    cursor: pointer;
+    position: relative;
+}
+.blockThree{
+    width: 100%;
+    height: 12rem;
+    border-radius: 15px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(171 171 171 / 10%);
+    cursor: pointer;
+    position: relative;
+}
+
+.blockFour{
+    width: 100%;
+    height: 12rem;
+    border-radius: 15px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(171 171 171 / 10%);
+    cursor: pointer;
+    position: relative;
+}
+
+.blockFive{
+    width: 100%;
+    height: 12rem;
+    border-radius: 15px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(171 171 171 / 10%);
+    cursor: pointer;
+    position: relative;
+}
+
+.blockSix{
+    width: 100%;
+    height: 12rem;
+    border-radius: 15px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(171 171 171 / 10%);
+    cursor: pointer;
+    position: relative;
+}
+
+.blockBar{
+    width: 100%;
+    height: 5%;
 }
 
 .blockContent .nextIcon{
@@ -81,16 +163,6 @@
     padding: 2rem 0;
 }
 
-.blockTwo{
-    width: 100%;
-    height: 10rem;
-    border-radius: 10px;
-    margin: 1rem auto;
-    display: flex;
-    background: rgb(128 127 119 / 43%);
-    position: relative;
-}
-
 .violet{
     background: var(--violet-color);
 }
@@ -103,13 +175,52 @@
     background: var(--orange-color);
 }
 
-@media screen and (min-width: 550px) {
+.blue{
+    background: var(--liteBlue-color);
+}
+
+.red{
+    background: var(--darkRed-color);
+}
+
+.yellow{
+    background: var(--yellow-color);
+}
+
+@media screen and (min-width: 720px) {
     .blockDetails{
         width: 40%;
     }
 
     .gameWrapper{
         padding: 2rem;
+    }
+
+    .blockOne{
+        width: 45%;
+        height: 15rem;
+    }
+    
+    .blockTwo{
+        width: 45%;
+        height: 15rem;
+    }
+    .blockThree{
+        width: 45%;
+        height: 15rem;
+    }
+    
+    .blockFour{
+        width: 45%;
+        height: 15rem;
+    }
+    .blockFive{
+        width: 45%;
+        height: 15rem;
+    }
+    .blockSix{
+        width: 45%;
+        height: 15rem;
     }
 }
 
