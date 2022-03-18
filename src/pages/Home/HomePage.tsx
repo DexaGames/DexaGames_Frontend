@@ -1,8 +1,6 @@
 import Header from "../../components/Header/HeaderSection";
-import Angle from "../../components/Shapes/Angle/AngleShape";
 import "./HomeStyles.css"
 import {MdNavigateNext} from 'react-icons/md';
-import LetterSquare from "../../components/Shapes/LetterSquare/LetterSq";
 import SideBar from "../../components/SideBar/SideBarSection";
 import Footer from "../../components/Footer/FooterSection";
 
