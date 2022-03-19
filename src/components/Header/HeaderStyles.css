@@ -2,13 +2,20 @@ header{
     padding: 1rem;
     color: var(--white-color);
     background: var(--bg-color);
-    height: 10%;
+    /* height: 10%; */
 }
 
 .navBar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.wrapHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
 }
 
 .head{

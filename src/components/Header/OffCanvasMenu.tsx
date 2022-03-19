@@ -2,6 +2,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import {Nav, NavDropdown, Navbar, Container} from 'react-bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import "./OffCanvasStyles.css";
+import { Button } from "react-bootstrap";
 
 function Hamburger() {
     return (
@@ -19,11 +20,13 @@ function Hamburger() {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="/">How to play</Nav.Link>
-                    <Nav.Link href="/">Docs</Nav.Link>
-                    <Nav.Link href="/">Contribution</Nav.Link>
+                    <Nav.Link href="/">About</Nav.Link>
+                    <Nav.Link href="/">Rules</Nav.Link>
+                    <Nav.Link href="/">Documentation</Nav.Link>
+                    <Nav.Link href="/">Contribute</Nav.Link>
                     <Nav.Link href="/">Settings</Nav.Link>
-                    <Nav.Link href="/">Notifications</Nav.Link>
+                    <Nav.Link href="/">FAQ</Nav.Link>
+                    <Nav.Link href="/"><Button>Sponsor </Button></Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
                 </Navbar.Offcanvas>

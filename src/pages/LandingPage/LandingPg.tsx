@@ -1,11 +1,9 @@
-import Angle from "../../components/Shapes/Angle/AngleShape"
-import Circle from "../../components/Shapes/DotCircle/CircleShape"
-import Dots from "../../components/Shapes/Dots/DotsShape"
-import Square from "../../components/Shapes/Square/SquareShape"
-import "./LandingStyles.css"
+import Circle from "../../components/Shapes/DotCircle/CircleShape";
+import Dots from "../../components/Shapes/Dots/DotsShape";
+import "./LandingStyles.css";
 import {MdNavigateNext} from 'react-icons/md';
-import CircleFilled from "../../components/Shapes/CircleFilled/FilledCircle"
-import DifferentShapes from "../../components/Shapes/Spice/ShapesDiffer"
+import CircleFilled from "../../components/Shapes/CircleFilled/FilledCircle";
+import DifferentShapes from "../../components/Shapes/Spice/ShapesDiffer";
 
 export default function LandingPage () {
     return (

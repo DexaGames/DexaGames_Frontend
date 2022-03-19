@@ -2,6 +2,19 @@
     display: block;
 }
 
+.offcanvas{
+    background: var(--bg-color) !important;
+    color: var(--white-color);
+}
+
+.btn-close{
+    
+}
+
+.nav-link{
+    color: var(--white-color) !important;
+}
+
 @media screen and (min-width:900px) {
     .navWrapper{
         display: none;

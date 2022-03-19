@@ -63,7 +63,7 @@ export default function Home () {
                                     <div className="peach blockBar"></div>
                                     <div className="blockContent">
                                         <div>
-                                            <h3 className="heading">Sliced</h3>
+                                            <h3 className="heading">Gothic</h3>
                                             <p>Arcade</p>
                                         </div>
                                         <a href="/" className="nextIcon"> <MdNavigateNext fill="white"/> </a>
@@ -73,7 +73,7 @@ export default function Home () {
                                     <div className="red blockBar"></div>
                                     <div className="blockContent">
                                         <div>
-                                            <h3 className="heading">Sliced</h3>
+                                            <h3 className="heading">Huddle</h3>
                                             <p>Arcade</p>
                                         </div>
                                         <a href="/" className="nextIcon"> <MdNavigateNext fill="white"/> </a>
