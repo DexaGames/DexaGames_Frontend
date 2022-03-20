@@ -20,8 +20,8 @@ function Hamburger() {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
+                    <Nav.Link href="/">How to play</Nav.Link>
                     <Nav.Link href="/">About</Nav.Link>
-                    <Nav.Link href="/">Rules</Nav.Link>
                     <Nav.Link href="/">Documentation</Nav.Link>
                     <Nav.Link href="/">Contribute</Nav.Link>
                     <Nav.Link href="/">Settings</Nav.Link>
