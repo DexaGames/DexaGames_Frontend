@@ -79,7 +79,7 @@ html {
 body {
     max-width: 1440px;
     height: 100vh;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
     font-family: var(--fontOne);
     color: var(--white-color);
     letter-spacing: 1px;

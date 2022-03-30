@@ -1,9 +1,12 @@
-import CircleFilled from "../../components/Shapes/CircleFilled/FilledCircle"
+import CircleFilled from "../../components/Shapes/CircleFilled/FilledCircle";
+import './LandingStyles.css';
 
 export default function SecondLandingPage () {
-    <section className="secondPage">
-        <div className="shapesTwo">
-            <CircleFilled />
-        </div>
-    </section>
+    return(
+        <section className="secondPage">
+            <div className="shapesTwo">
+                <CircleFilled />
+            </div>
+        </section>
+    )
 }
