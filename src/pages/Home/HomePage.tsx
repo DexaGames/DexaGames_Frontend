@@ -3,10 +3,53 @@ import "./HomeStyles.css"
 import {MdNavigateNext} from 'react-icons/md';
 import SideBar from "../../components/SideBar/SideBarSection";
 import Footer from "../../components/Footer/FooterSection";
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+    // RouteComponentProps
+  } from "react-router-dom"; 
+import Numlock from "../../components/GameBlocks/Numlock/NumlockPage";
+import Decko from "../../components/GameBlocks/Decko/DeckoPage";
+import { Interface } from "readline";
+import { Props, useState } from "react";
 
-export default function Home () {
+
+
+
+class IBlocks {
+    heading: string = ''
+    type: string = ''
+    url?: string = ''
+}
+
+const Home = (data: IBlocks[]) => {
+    const renderBlock = (): JSX.Element[] => {
+        return data.map((idx) => {
+            return (
+                <div className="blockOne">
+                    <div className="violet blockBar"></div>
+                    <div className="blockContent">
+                        <div>
+                            <h3 className="heading">{idx.heading}</h3>
+                            <p>{idx.type}</p>
+                        </div>
+                        <Link to="./Numlock" className="nextIcon"> <MdNavigateNext fill="white"/> </Link>
+                    </div>
+                </div>
+            )
+        })
+    }
+
+    const [display, setDisplay] = useState([
+        {
+            heading: "Numlock",
+            type: "Arcade"
+        }
+    ])
+
     return (
-        <>
+        <Router>
             <div className="homeWrapper">
                 <Header />
                 <div className="mainBox">
@@ -19,16 +62,9 @@ export default function Home () {
                             <p className="bodyText">Choose a game to play</p>
 
                             <div className="gameBlocks">
-                                <div className="blockOne">
-                                    <div className="violet blockBar"></div>
-                                    <div className="blockContent">
-                                        <div>
-                                            <h3 className="heading">Numlock</h3>
-                                            <p>Puzzle</p>
-                                        </div>
-                                        <a href="/" className="nextIcon"> <MdNavigateNext fill="white"/> </a>
-                                    </div>
-                                </div>
+                                
+                               {renderBlock}
+
                                 <div className="blockTwo">
                                     <div className="orange blockBar"></div>
                                     <div className="blockContent">
@@ -36,9 +72,10 @@ export default function Home () {
                                             <h3 className="heading">Decko</h3>
                                             <p>Puzzle</p>
                                         </div>
-                                        <a href="/" className="nextIcon"> <MdNavigateNext fill="white"/> </a>
+                                        <a href="/.Decko" className="nextIcon"> <MdNavigateNext fill="white"/> </a>
                                     </div>
                                 </div>
+
                                 <div className="blockThree">
                                     <div className="blue blockBar"></div>
                                     <div className="blockContent">
@@ -46,9 +83,10 @@ export default function Home () {
                                             <h3 className="heading">MatchBox</h3>
                                             <p>Arcade</p>
                                         </div>
-                                        <a href="/" className="nextIcon"> <MdNavigateNext fill="white"/> </a>
+                                        <Link to="/" className="nextIcon"> <MdNavigateNext fill="white"/> </Link>
                                     </div>
                                 </div>
+
                                 <div className="blockFour">
                                     <div className="yellow blockBar"></div>
                                     <div className="blockContent">
@@ -59,6 +97,7 @@ export default function Home () {
                                         <a href="/" className="nextIcon"> <MdNavigateNext fill="white"/> </a>
                                     </div>
                                 </div>
+
                                 <div className="blockFive">
                                     <div className="peach blockBar"></div>
                                     <div className="blockContent">
@@ -69,6 +108,7 @@ export default function Home () {
                                         <a href="/" className="nextIcon"> <MdNavigateNext fill="white"/> </a>
                                     </div>
                                 </div>
+
                                 <div className="blockSix">
                                     <div className="red blockBar"></div>
                                     <div className="blockContent">
@@ -79,6 +119,8 @@ export default function Home () {
                                         <a href="/" className="nextIcon"> <MdNavigateNext fill="white"/> </a>
                                     </div>
                                 </div>
+                                {/* <Route path="./Numlock" exact component={Numlock} />
+                                <Route path="./Decko" exact component={Decko} /> */}
                             </div>
                         </div>
                         <Footer /> 
@@ -86,11 +128,11 @@ export default function Home () {
                      
                 </div>
             </div>
-        </>
+        </Router>
     )
 }
 
-
+export default  Home;
 
                             {/* <div className="gameBlocks">
                                 <div className="blockDetails orange">
