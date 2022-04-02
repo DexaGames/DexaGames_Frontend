@@ -17,15 +17,15 @@ import { Props, useState } from "react";
 
 
 
-class IBlocks {
-    heading: string = ''
-    type: string = ''
-    url?: string = ''
+interface IBlocks {
+    heading: string
+    type: string
+    url?: string 
 }
 
-const Home = (data: IBlocks[]) => {
+const Home :React.FC<IBlocks[]> = (props: IBlocks[]) => {
     const renderBlock = (): JSX.Element[] => {
-        return data.map((idx) => {
+        return props.map((idx) => {
             return (
                 <div className="blockOne">
                     <div className="violet blockBar"></div>
@@ -41,16 +41,16 @@ const Home = (data: IBlocks[]) => {
         })
     }
 
-    const [display, setDisplay] = useState([
-        {
-            heading: "Numlock",
-            type: "Arcade"
-        }
-    ])
+    // const [display, setDisplay] = useState([
+    //     {
+    //         heading: "Numlock",
+    //         type: "Arcade"
+    //     }
+    // ])
 
     return (
         <Router>
-            <div className="homeWrapper">
+            {/* <div className="homeWrapper">
                 <Header />
                 <div className="mainBox">
                     <div className="sideBox">
@@ -120,14 +120,14 @@ const Home = (data: IBlocks[]) => {
                                     </div>
                                 </div>
                                 {/* <Route path="./Numlock" exact component={Numlock} />
-                                <Route path="./Decko" exact component={Decko} /> */}
+                                <Route path="./Decko" exact component={Decko} /> 
                             </div>
                         </div>
                         <Footer /> 
                     </div>
                      
                 </div>
-            </div>
+            </div> */}
         </Router>
     )
 }

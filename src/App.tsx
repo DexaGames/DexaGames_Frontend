@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
         {/* <LandingPage /> */}
-      <Home data={[]}/>
+      <Home props = {[]}/>
         {/* <BasicExample/> */}
     </div>
   );
