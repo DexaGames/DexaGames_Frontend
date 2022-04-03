@@ -1,12 +1,12 @@
 .wrapper{
     padding: 1rem;
     height: 100vh;
-    
+    background: var(--bg-color);   
 }
 
 /* FIRST PAGE */
 .firstPage{
-    display: none;
+    display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
@@ -30,20 +30,22 @@
 }
 
 .next{
-    display: block;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     color: var(--yellow-color);
 }
 
 .explore{
     text-align: right;
+    font-size: var(--font-twentyFour);
 }
 
 /* SECOND PAGE */
 .secondPage{
    height: 100%;
     width: 100%;
-    display: block;
+    display: none;
 }
 
 .shapesTwo{
@@ -53,7 +55,3 @@
     flex-direction: column;
 }
 
-.started{
-    margin: 0 0 0 auto;
-    padding: 1rem;
-}

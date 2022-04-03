@@ -27,3 +27,11 @@
     background: var(--yellow-color);
     margin: .35rem;
 }
+
+@media screen and (min-width: 700px) {
+    .dot{
+        width: 5px;
+        height: 5px;
+        margin: .5rem;
+    }
+}

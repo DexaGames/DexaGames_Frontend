@@ -1,5 +1,6 @@
 footer{
-    border-top: 1px solid grey;
+    background: var(--bg-color);
+    border-top: 1px solid var(--grey-color);
     display: flex;
     padding: 1rem;
     justify-content: center;
@@ -8,4 +9,5 @@ footer{
 .footerText{
     font-size: var(--font-fourteen);
     margin: 0 auto;
+    color: var(--white-color);
 }

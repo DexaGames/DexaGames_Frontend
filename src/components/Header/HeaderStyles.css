@@ -1,11 +1,42 @@
 header{
     padding: 1rem;
-    color: var(--black-color);
-    background: var(--yellow-color);
+    color: var(--white-color);
+    background: var(--bg-color);
+    /* height: 10%; */
 }
 
 .navBar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.menuRight{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+
+.head{
+    color: var(--white-color);
+    display: flex;
+}
+
+@media screen and (min-width: 700px) {     
+    .menuRight{
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 768px) {     
+    .menuRight{
+        width: 23%;
+    }
+}
+
+@media screen and (min-width: 900px) {     
+    .menuRight{
+        width: 20%;
+    }
 }

@@ -1,31 +1,37 @@
 .colorCircle{
     position: relative;
-    height: 92%;
+    height: 100%;
     width: 100%;
 }
 
 .textContent{
     position: absolute;
-    top: 50%;
-    width: 55%;
+    top: 45%;
+    width: 60%;
     right: 0%;
 }
 
+.started{
+    margin: 1rem 0px;
+    align-items: center;
+    display: flex;
+}
+
 .yellowCircle{
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     background: var(--yellow-color);
     position: absolute;
-    bottom: -4.5rem;
-    left: -.5rem;
+    bottom: 0%;
+    left: 0%;
 }
 
 .halfCircle{
     width: 4rem;
     height: 8rem;
     border-radius: 150px 0 0 150px;
-    background: var(--yellow-color);
+    background: var(--violet-color);
     position: absolute;
     right: 0rem;
 }
@@ -34,26 +40,27 @@
     width: 4rem;
     height: 8rem;
     border-radius: 150px 0 0 150px;
-    background: var(--yellow-color);
+    background: var(--liteBlue-color);
     position: absolute;
-    left: 5rem;
-    transform: rotate(90deg) translate(120%);
-    top: 20%;
+    right: 8%;
+    transform: rotate(90deg);
+    bottom: -2%;
 }
 
 .quater{
     position: absolute;
-    bottom: 5rem;
+    bottom: 4rem;
     right: 3rem;
+    display: none;
 }
 
 .quaterCircle{
     width: 3rem;
     height: 3rem;
     border-radius: 0 0 0 150px;
-    background: var(--yellow-color);
+    background: var(--darkRed-color);
     position: absolute;
-    top: 4rem;
+    top: 3rem;
     transform: rotate(180deg);
 }
 
@@ -61,14 +68,63 @@
     width: 3rem;
     height: 3rem;
     border-radius: 0 0 0 150px;
-    background: var(--yellow-color);
+    background: var(--peach-color);
 }
 
 .squareCirlce{
-    width: 5rem;
-    height: 5rem;
-    background: var(--yellow-color);
+    width: 7rem;
+    height: 7rem;
+    background: var(--orange-color);
     position: absolute;
     top: 0rem;
     left: 1rem;
+}
+
+
+@media screen and (min-width: 900px) {
+    
+    .textContent{
+        position: absolute;
+        top: 45%;
+        width: 50%;
+        right: 0%;
+    }
+
+    .yellowCircle{
+        width: 8rem;
+        height: 8em;
+    }
+    
+    .halfCircle{
+        width: 4rem;
+        height: 8rem;
+    }
+    
+    .halfCircleTwo{
+        width: 4rem;
+        height: 8rem;
+        display: block;
+    }
+
+    .quater{
+        bottom: 9rem;
+        right: 3rem;
+    }
+    
+    
+    .quaterCircle{
+        width: 6rem;
+        height: 6rem;
+        top: 5rem;
+    }
+    
+    .quaterCircleTwo{
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .squareCirlce{
+        width: 8rem;
+        height: 8rem;
+    }
 }

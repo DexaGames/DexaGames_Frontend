@@ -1,8 +1,9 @@
 
 @media screen and (min-width: 900px) {
     .sideBarWrap{
-        border-right: 1px solid grey;
+        background: var(--black-color);
         height: 100%;
+        padding: 2rem;
     }
 
     .sideList{
@@ -19,6 +20,6 @@
 
     .sideItem a{
         color: var(--white-color);
-        font-size: var(--font-twentyFour);
+        font-size: var(--font-sixteen);
     }
 }
