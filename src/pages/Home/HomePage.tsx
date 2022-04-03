@@ -11,7 +11,6 @@ import {
   } from "react-router-dom"; 
 import Numlock from "../../components/GameBlocks/Numlock/NumlockPage";
 import Decko from "../../components/GameBlocks/Decko/DeckoPage";
-import { Interface } from "readline";
 import { Props, useState } from "react";
 
 
