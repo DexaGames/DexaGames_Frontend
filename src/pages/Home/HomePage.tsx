@@ -16,16 +16,19 @@ import { Props, useState } from "react";
 
 
 
-
 interface IBlocks {
+    blocks: BlocksInterface[],
+}
+
+interface BlocksInterface {
     heading: string
     type: string
     url?: string 
 }
 
-const Home :React.FC<IBlocks[]> = (props: IBlocks[]) => {
+const Home :React.FC<IBlocks> = ({blocks}: IBlocks) => {
     const renderBlock = (): JSX.Element[] => {
-        return props.map((idx) => {
+        return blocks.map((idx) => {
             return (
                 <div className="blockOne">
                     <div className="violet blockBar"></div>
@@ -41,16 +44,16 @@ const Home :React.FC<IBlocks[]> = (props: IBlocks[]) => {
         })
     }
 
-    // const [display, setDisplay] = useState([
-    //     {
-    //         heading: "Numlock",
-    //         type: "Arcade"
-    //     }
-    // ])
+    const [display, setDisplay] = useState([
+        {
+            heading: "Numlock",
+            type: "Arcade"
+        }
+    ])
 
     return (
         <Router>
-            {/* <div className="homeWrapper">
+            <div className="homeWrapper">
                 <Header />
                 <div className="mainBox">
                     <div className="sideBox">
@@ -119,15 +122,15 @@ const Home :React.FC<IBlocks[]> = (props: IBlocks[]) => {
                                         <a href="/" className="nextIcon"> <MdNavigateNext fill="white"/> </a>
                                     </div>
                                 </div>
-                                {/* <Route path="./Numlock" exact component={Numlock} />
-                                <Route path="./Decko" exact component={Decko} /> 
+                                {/* <Route path="./Numlock" exact component={Numlock} /> 
+                                <Route path="./Decko" exact component={Decko} /> */}
                             </div>
                         </div>
                         <Footer /> 
                     </div>
                      
                 </div>
-            </div> */}
+            </div>
         </Router>
     )
 }

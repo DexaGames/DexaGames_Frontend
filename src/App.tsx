@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
         {/* <LandingPage /> */}
-      <Home props = {[]}/>
+      <Home blocks={[
+          {heading: 'heading', type: '', url: ''}
+        ]} />
         {/* <BasicExample/> */}
     </div>
   );
