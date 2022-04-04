@@ -9,44 +9,26 @@ import {
     Link
     // RouteComponentProps
   } from "react-router-dom"; 
-import Numlock from "../../components/GameBlocks/Numlock/NumlockPage";
-import Decko from "../../components/GameBlocks/Decko/DeckoPage";
-import { Props, useState } from "react";
+import { useState } from "react";
 
 
+const Home = () => {
 
-interface IBlocks {
-    blocks: BlocksInterface[],
-}
-
-interface BlocksInterface {
-    heading: string
-    type: string
-    url?: string 
-}
-
-const Home :React.FC<IBlocks> = ({blocks}: IBlocks) => {
-    const renderBlock = (): JSX.Element[] => {
-        return blocks.map((idx) => {
-            return (
-                <div className="blockOne">
-                    <div className="violet blockBar"></div>
-                    <div className="blockContent">
-                        <div>
-                            <h3 className="heading">{idx.heading}</h3>
-                            <p>{idx.type}</p>
-                        </div>
-                        <Link to="./Numlock" className="nextIcon"> <MdNavigateNext fill="white"/> </Link>
-                    </div>
-                </div>
-            )
-        })
-    }
-
-    const [display, setDisplay] = useState([
+    const [list, setList] = useState([
         {
             heading: "Numlock",
-            type: "Arcade"
+            type: "Arcade",
+            color: "",
+            id: 1
+        },
+        {
+            heading: "",
+            type: "",
+            color: "",
+            id: 2
+        },
+        {
+
         }
     ])
 
@@ -65,12 +47,23 @@ const Home :React.FC<IBlocks> = ({blocks}: IBlocks) => {
 
                             <div className="gameBlocks">
                                 
-                               {renderBlock}
-
-                                <div className="blockTwo">
+                                <div className="blockOne">
+                                    {list.map((block) => (
+                                        <><div className="violet blockBar">{block.color}</div><div className="blockContent">
+                                            <div>
+                                                <h3 className="heading">{block.heading}</h3>
+                                                <p>{block.type}</p>
+                                            </div>
+                                            <Link to="./Numlock" className="nextIcon"> <MdNavigateNext fill="white" /> </Link>
+                                        </div></>
+                                    ))}
+                                </div>
+                                
+                                {/* <div className="blockTwo">
                                     <div className="orange blockBar"></div>
                                     <div className="blockContent">
                                         <div>
+                                            <img src="../../assets/build-svgrepo-com.svg" alt="Cover Image" />
                                             <h3 className="heading">Decko</h3>
                                             <p>Puzzle</p>
                                         </div>
@@ -120,7 +113,7 @@ const Home :React.FC<IBlocks> = ({blocks}: IBlocks) => {
                                         </div>
                                         <a href="/" className="nextIcon"> <MdNavigateNext fill="white"/> </a>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* <Route path="./Numlock" exact component={Numlock} /> 
                                 <Route path="./Decko" exact component={Decko} /> */}
                             </div>

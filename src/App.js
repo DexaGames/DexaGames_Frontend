@@ -7,11 +7,8 @@ function App() {
   return (
     <div className="App">
         {/* <LandingPage /> */}
-      {/* <Home blocks={[
-          {heading: 'heading', type: '', url: ''}
-        ]} /> */}
-        <Numlock/>
-        {/* <BasicExample/> */}
+        
+        <Home/>
     </div>
   );
 }
