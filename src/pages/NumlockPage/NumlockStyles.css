@@ -1,0 +1,71 @@
+.gameBoard{  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.boxTop, .boxBottom{
+    width: 3.8rem;
+    height: 4rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    background: var(--gradient-white);
+    color: var(--black-color);
+    font-size: var(--font-thirtyTwo);
+}
+
+.boxTop:focus, .boxBottom:active{
+    background: var(--gradient-blue);
+}
+
+.gameKeyboard{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem auto;
+}
+
+.keyboard{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: .5rem;
+    background: var(--gradient-blue);
+    color: var(--black-color);
+    font-size: var(--font-thirtyTwo);
+}
+
+.keyboard:hover{
+    background: var(--gradient-violet);
+    transition: ease-in .3s;
+    box-shadow: 0px 5px 30px 0px rgb(95 93 93 / 78%);
+    -webkit-box-shadow: 0px 5px 30px 0px rgb(95 93 93 / 78%);
+    -moz-box-shadow: 0px 5px 30px 0px rgb(95 93 93 / 78%);
+}
+
+.keyboard h4{
+    color: var(--black-color);
+}
+
+@media screen and (min-width: 500px) {
+    .gameBoard{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .gameKeyboard{
+        width: 305px;
+    }
+
+    .boxTop, .boxBottom, .keyboard{
+        width: 5rem;
+    }
+}

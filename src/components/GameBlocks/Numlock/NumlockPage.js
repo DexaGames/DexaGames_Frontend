@@ -1,6 +1,6 @@
 export default function Numlock () {
     return (
-        <section>
+        <section className="wrapper">
             
         </section>
     )

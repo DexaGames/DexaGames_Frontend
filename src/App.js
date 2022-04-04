@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
         {/* <LandingPage /> */}
-        
-        <Home/>
+        <Numlock/>
+        {/* <Home/> */}
     </div>
   );
 }

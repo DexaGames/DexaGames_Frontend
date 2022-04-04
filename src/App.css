@@ -119,14 +119,14 @@ h2 {
 
 h3 {
     font-size: var(--font-eighteen);
-    line-height: 2rem;
+    line-height: 1.5rem;
     font-weight: 700;
 }
 
 h4 {
     font-size: var(--font-sixteen);
     line-height: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h5 {
@@ -157,49 +157,30 @@ img {
     background-size: cover;
 }
 
-/* STyles for card hover */
+.wrapper{
+    background: var(--bg-color);
+    color: var(--white-color);
+    height: 100vh;
+    overflow: scroll;
+    width: 100%;
+    padding: 1rem;
+}
 
-/* .card {
-    width: 250px;
-    height: 196px;
-    background: var(--white-color);
-    box-shadow: 9px 9px 16px rgb(189 189 189 / 20%)
-    , -9px -9px 16px rgb(189 189 189 / 24%);
-    border-radius: 10px;
-    margin: 1rem;
+.gameWrap{
     display: flex;
     flex-direction: column;
-    transition: ease all .5s;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-  
-.card * {
-    transition: 0.3s ease all;
-}
-.cardTop {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
-  
-  .card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 1.5rem 1rem 1rem;
-    display: grid;
-    place-items: center;
-  }
-  
-  .card .focus-content {
-    display: block;
-    text-align: left;
-    padding: 1rem;
-  }
-  
-  .card:hover img, .card:focus-within img{
-    margin-top: -120px;
-  }
-   */
+
+.headIntro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headIntro h1{
+    font-size: var(--font-fourtyTwo);
+    color: var(--gradient-violet);
+}
