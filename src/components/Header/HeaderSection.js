@@ -3,6 +3,8 @@ import {Button} from "@chakra-ui/react";
 import {BsSuitHeartFill} from "react-icons/bs";
 import {MdGamepad} from "react-icons/md";
 import { ColorModeSwitcher } from "../DarkModeButton/ColorModeSwitcher";
+import Hamburger from "./OffCanvasMenu";
+
 export default function Header () {
     return (
         <header>
@@ -10,8 +12,7 @@ export default function Header () {
                 <h4 className="head">DexaGames <MdGamepad/></h4>
                 <div className="menuRight">
                    <ColorModeSwitcher/>
-                    <Button rightIcon={<BsSuitHeartFill fill="#AB2121" />} colorScheme='#FFFFFF' variant='outline'>Sponsor</Button>
-                    
+                    <Hamburger />
                 </div>
             </nav>
         </header>

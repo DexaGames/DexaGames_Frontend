@@ -2,13 +2,13 @@ import { useState } from "react";
 import "./NumlockStyles.css";
 
 export default function Numlock () {
-    const [storeOne, setStoreOne] = useState(0);
-    const [storeTwo, setStoreTwo] = useState(0);
-    const [storeThree, setStoreThree] = useState(0);
-    const [storeFour, setStoreFour] = useState(0);
+    const [count, setCount] = useState();
+    const [countTwo, setCountTwo] = useState();
+    const [countThree, setCountThree] = useState();
+    const [countFour, setCountFour] = useState();
 
-    const handleOnclick = (noOne) => {
-        noOne.target.value
+    const handleReset = (e) => {
+        console.log(e)
     }
 
     return (
@@ -19,22 +19,22 @@ export default function Numlock () {
             </div>
            
                 <div className="gameBoard">
-                    <div className="boxTop"><h3></h3></div>
-                    <div className="boxTop"><h3></h3></div>
-                    <div className="boxTop"><h3></h3></div>
-                    <div className="boxTop"><h3></h3></div>
+                    <div className="boxTop"><h3>{count}</h3></div>
+                    <div className="boxTop"><h3>{countTwo}</h3></div>
+                    <div className="boxTop"><h3>{countThree}</h3></div>
+                    <div className="boxTop"><h3>{countFour}</h3></div>
                 </div>
-                <div className="gameKeyboard">
-                    <button onClick={() => handleOnclick(1)} className="keyboard">
+                <div className="gameKeyboard"> 
+                    <button onClick={e => setCount(1)} className="keyboard">
                         <h4>1</h4>
                     </button>
-                    <button className="keyboard">
+                    <button onClick={e => setCountTwo(2)} className="keyboard">
                         <h4>2</h4>
                     </button>
-                    <button className="keyboard">
-                        <h4>3</h4>
+                    <button onClick={e => setCountThree(3)} className="keyboard">
+                        <h4>3</h4> 
                     </button>
-                    <button className="keyboard">
+                    <button onClick={e => setCountFour(4)}className="keyboard">
                         <h4>4</h4>
                     </button>
                     <button className="keyboard">
@@ -51,6 +51,9 @@ export default function Numlock () {
                     </button>
                     <button className="keyboard">
                         <h4>9</h4>
+                    </button>
+                    <button onClick={handleReset} className="keyboard red">
+                        <h4>x</h4>
                     </button>
                     <button className="keyboard">
                         <h4>0</h4>

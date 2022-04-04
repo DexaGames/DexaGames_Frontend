@@ -27,7 +27,7 @@ const Home = () => {
             heading: "Decko",
             type: "Puzzle",
             color: "",
-            image: "https://craftwork-images.b-cdn.net/wp-content/uploads/edd/Card-4-68.png",
+            image: "https://onfire.craftwork.design/images/s-5-img-20@2x.png",
             url: "./Decko",
             id: 2
         },
@@ -43,7 +43,7 @@ const Home = () => {
             heading: "Sliced",
             type: "Arcade",
             color: "",
-            image: "https://craftwork-images.b-cdn.net/wp-content/uploads/edd/Card-4-68.png",
+            image: "https://onfire.craftwork.design/images/s-4-img-2@2x.png",
             url: "./Sliced",
             id: 4
         },
@@ -51,15 +51,15 @@ const Home = () => {
             heading: "Gothic",
             type: "Arcade",
             color: "",
-            image: "https://onfire.craftwork.design/images/s-5-img-6@2x.png",
+            image: "https://onfire.craftwork.design/images/s-5-img-2@2x.png",
             url: "./Gothic",
             id: 5
         },
         {
             heading: "Huddle",
-            type: "Arcade",
+            type: "Puzzle",
             color: "",
-            image: "https://craftwork-images.b-cdn.net/wp-content/uploads/edd/Card-4-68.png",
+            image: "https://onfire.craftwork.design/images/s-5-img-4@2x.png",
             url: "./Huddle",
             id: 6
         }
@@ -70,9 +70,9 @@ const Home = () => {
             <div className="homeWrapper">
                 <Header />
                 <div className="mainBox">
-                    <div className="sideBox">
+                    {/* <div className="sideBox">
                         <SideBar />
-                    </div>
+                    </div> */}
                     <div className="contentWrapper">
                         <div className="gameWrapper">
                             <h2 className="headText">Pick the Game for you.</h2>

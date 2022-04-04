@@ -1,5 +1,6 @@
 .navWrapper{
     display: block;
+    margin: 0 0 0 .5rem;
 }
 
 .offcanvas{
@@ -7,16 +8,6 @@
     color: var(--white-color);
 }
 
-.btn-close{
-    
-}
-
 .nav-link{
     color: var(--white-color) !important;
-}
-
-@media screen and (min-width:900px) {
-    .navWrapper{
-        display: none;
-    }
 }
