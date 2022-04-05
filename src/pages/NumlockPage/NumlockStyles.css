@@ -7,18 +7,34 @@
 }
 
 .boxTop, .boxBottom{
-    width: 3.8rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 10px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: .5rem;
+    padding: 1rem;
     background: var(--gradient-white);
+    border: none;
+    text-align: center;
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: var(--font-eighteen);
+    text-align: center
 }
 
-.boxTop h3, .boxBottom h3{
+/* .boxTop h3, .boxBottom h3{
     color: var(--black-color);
-    font-size: var(--font-thirtyTwo);
+    font-weight: 600;
+    font-size: var(--font-eighteen);
+    text-align: center;
+    padding: 0.75rem 0;
+} */
+
+.boxTop::placeholder, .boxBottom::placeholder{
+    text-align: center;
+    color: var(--grey-color);
+    font-weight: 600;
+    font-size: var(--font-eighteen);
     text-align: center;
     padding: 0.75rem 0;
 }
@@ -28,12 +44,14 @@
 }
 
 .gameKeyboard{
-    width: 250px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin: 1rem auto;
+    width: 265px;
+    height: calc(100% - 110px);
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 1rem 0;
 }
 
 .keyboard{
@@ -44,7 +62,7 @@
     padding: .5rem;
     background: var(--gradient-blue);
     color: var(--black-color);
-    font-size: var(--font-thirtyTwo);
+    border: none;
 }
 
 .keyboard:hover{
@@ -55,26 +73,45 @@
     -moz-box-shadow: 0px 5px 30px 0px rgb(95 93 93 / 78%);
 }
 
-.keyboard h4{
+.keyboard h3{
+    color: var(--black-color);
+    font-weight: 500;
+}
+
+.spaceBar{
+    width: 100%;
+    grid-column: 1 / 4;
+    height: 4rem;
+    border-radius: 10px;
+    border: none;
+    margin-top: 1rem;
+    padding: .5rem;
+    background: var(--gradient-blue);
+}
+
+.spaceBar h3{
+    font-weight: 500;
     color: var(--black-color);
 }
 
-.red:hover{
-    background: var(--red-color);
+.spaceBar:hover{
+    background: rgb(168 70 70);
 }
 
 @media screen and (min-width: 500px) {
     .gameBoard{
         width: 60%;
     }
+
+    .boxTop, .boxBottom{
+        width: 3.8rem;
+        height: 3.8rem;
+        padding: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 900px) {
-    .gameKeyboard{
-        width: 305px;
-    }
-
-    .boxTop, .boxBottom, .keyboard{
-        width: 5rem;
+    .gameBoard{
+        width: 50%;
     }
 }

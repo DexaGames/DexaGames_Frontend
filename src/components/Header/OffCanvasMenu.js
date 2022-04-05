@@ -45,15 +45,15 @@ export default function Humburger() {
                 <li className="sideItem"><a href="/">Contribute</a></li>
                 <li className="sideItem"><a href="/">Settings</a></li>
                 <li className="sideItem"><a href="/">FAQ</a></li>
-                <li className="sideItem"><Button rightIcon={<BsSuitHeartFill fill="#AB2121"       />} colorScheme='#FFFFFF' variant='outline'>Sponsor</Button></li>
+                <li className="sideItem"><Button rightIcon={<BsSuitHeartFill fill="#AB2121"/>} colorScheme='#FFFFFF' variant='outline' color="white !important">Sponsor</Button></li>
             </ul>
-            <h3>Collaborators</h3>
-            <Wrap>
+            <h3 style={{marginBottom: "1rem"}}>Collaborators</h3>
+            <Wrap style={{marginBottom: "1rem"}}>
               <WrapItem>
-                <Avatar name='Lilian Okeke' src='https://www.dropbox.com/s/b0g4dp5wlnjld6a/Lilian-Okeke.jpg?dl=0' />
+                <Avatar name='Lilian Okeke' src='	https://userpics.craftwork.design/images/s-5-img-10@2x.png' />
               </WrapItem>
               <WrapItem>
-                <Avatar name='Godfrey Odenigbo' src='https://bit.ly/tioluwani-kolawole' />
+                <Avatar name='Godfrey Odenigbo' src='https://userpics.craftwork.design/images/s-5-img-8@2x.png' />
               </WrapItem>
             </Wrap>
           </DrawerBody>

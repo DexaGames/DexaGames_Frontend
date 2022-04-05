@@ -160,8 +160,8 @@ img {
 .wrapper{
     background: var(--bg-color);
     color: var(--white-color);
-    height: 100vh;
-    overflow: scroll;
+    height: 100%;
+    /* overflow: scroll; */
     width: 100%;
     padding: 1rem;
 }
