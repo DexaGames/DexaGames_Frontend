@@ -1,7 +1,11 @@
 import { useState } from "react";
 import "./NumlockStyles.css";
+import Wrapper from "./Wrapper";
+import Screen from "./ScreenDisplay";
+import ButtonBox from "./ButtonWrap";
+import Button from "./Buttons";
 
-export default function Numlock () {
+export function Numlocks () {
     const [count, setCount] = useState();
     const [countTwo, setCountTwo] = useState();
     const [countThree, setCountThree] = useState();
@@ -78,5 +82,75 @@ export default function Numlock () {
                 </div>
             </div>
         
+    )
+}
+
+const btnValues = [
+    [7, 8, 9],
+    [4, 5, 6],
+    [1, 2, 3],
+    ["", 0, ""],
+    ["Clear"]
+];
+
+export default function Numlock () {
+
+    let [display, setDisplay] = useState({
+        num: 0,
+        res: 0,
+    });
+
+    const numClickHandler = (e) => {
+        e.preventDefault();
+        const value = e.target.innerHTML;
+    
+        if (display.num.length < 2) {
+          setDisplay({
+            ...display,
+            num:
+              display.num === 0 && value === "0"
+                ? "0"
+                : display.num % 1 === 0
+                ? Number(display.num + value)
+                : display.num + value,
+            res: !display.sign ? 0 : display.res,
+          });
+        }
+    };
+
+    const resetClickHandler = () => {
+        setDisplay({
+          ...display,
+          num: 0,
+          res: 0,
+        });
+    };
+
+    return (
+        <div className="wrapper gameWrap">
+            <div className="headIntro">
+                <h1>Numlock</h1>
+                <h3>Let's get playing</h3>
+            </div>
+            <Wrapper>
+                <Screen value={display.num ? display.num : display.res} />
+                <ButtonBox>
+                    {
+                    btnValues.flat().map((btn, i) => {
+                        return (
+                        <Button
+                            key={i}
+                            className={btn === "Clear" ? "c" : ""}
+                            value={btn}
+                            onClick={
+                                btn === "Clear" ? resetClickHandler : numClickHandler
+                            }
+                        />
+                        );
+                    })
+                    }
+                </ButtonBox>
+            </Wrapper>
+        </div>
     )
 }

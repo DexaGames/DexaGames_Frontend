@@ -1,8 +1,87 @@
-.gameBoard{  
+.numlockWrapper {
+    width: 340px;
+    height: 540px;
+    padding: 10px;
+    /* border-radius: 10px;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%); */
+}
+
+.screen {
+    height: 70px;
     width: 100%;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    background: var(--gradient-white);
+    border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
+    color: var(--black-color);
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.buttonBox {
+    width: 100%;
+    height: calc(100% - 110px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 15px;
+}
+
+button {
+    border: none;
+    background: var(--gradient-blue);
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+button:hover{
+    background: var(--gradient-violet);
+    transition: ease-in .3s;
+    box-shadow: 0px 5px 30px 0px rgb(95 93 93 / 78%);
+    -webkit-box-shadow: 0px 5px 30px 0px rgb(95 93 93 / 78%);
+    -moz-box-shadow: 0px 5px 30px 0px rgb(95 93 93 / 78%);
+}
+
+/* .button h3{
+    color: var(--black-color);
+    font-weight: 500;
+} */
+
+.spaceBar{
+    width: 100%;
+    grid-column: 1 / 4;
+    height: 4rem;
+    border-radius: 10px;
+    border: none;
+    margin-top: 1rem;
+    padding: .5rem;
+    background: var(--gradient-blue);
+}
+
+.spaceBar h3{
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.spaceBar:hover{
+    background: rgb(168 70 70);
+}
+
+/*  */
+.gameBoard{   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    grid-gap: 15px;
     margin: 0 auto;
 }
 
@@ -65,43 +144,8 @@
     border: none;
 }
 
-.keyboard:hover{
-    background: var(--gradient-violet);
-    transition: ease-in .3s;
-    box-shadow: 0px 5px 30px 0px rgb(95 93 93 / 78%);
-    -webkit-box-shadow: 0px 5px 30px 0px rgb(95 93 93 / 78%);
-    -moz-box-shadow: 0px 5px 30px 0px rgb(95 93 93 / 78%);
-}
-
-.keyboard h3{
-    color: var(--black-color);
-    font-weight: 500;
-}
-
-.spaceBar{
-    width: 100%;
-    grid-column: 1 / 4;
-    height: 4rem;
-    border-radius: 10px;
-    border: none;
-    margin-top: 1rem;
-    padding: .5rem;
-    background: var(--gradient-blue);
-}
-
-.spaceBar h3{
-    font-weight: 500;
-    color: var(--black-color);
-}
-
-.spaceBar:hover{
-    background: rgb(168 70 70);
-}
 
 @media screen and (min-width: 500px) {
-    .gameBoard{
-        width: 60%;
-    }
 
     .boxTop, .boxBottom{
         width: 3.8rem;
@@ -111,7 +155,5 @@
 }
 
 @media screen and (min-width: 900px) {
-    .gameBoard{
-        width: 50%;
-    }
+   
 }
