@@ -5,6 +5,7 @@ import {ScreenDisplay, Screen} from "./ScreenDisplay";
 import ButtonBox from "./ButtonWrap";
 import Button from "./Buttons";
 
+// Button values
 const btnValues = [
     [1, 2, 3],
     [4, 5, 6],
@@ -17,6 +18,7 @@ export default function Numlock () {
 
     let [display, setDisplay] = useState('');
 
+    // Handle the click event for each numbered buttons
     const numClickHandler = (e) => {
         e.preventDefault();
         const value = e.target.innerHTML;
@@ -33,16 +35,20 @@ export default function Numlock () {
         }
     };
 
+    // Handle the click event for the reset button
     const resetClickHandler = () => {
         setDisplay(display = '');
     };
 
+    // Handle the click event for the "x" or backspace button
     const backspaceClickHandler = () => {
         const show = display.split('')
         show.length = show.length - 1
         setDisplay(show.join(''))
     }
 
+    // Giving class names to the "Enter", "Reset", "x" buttons
+    // so that they can be styled.
     const getClassName = (btn) => {
         if (btn == "Enter") {
             return "Enter"
@@ -54,16 +60,17 @@ export default function Numlock () {
         else {return ""}
     }
 
+    // Handle the click event for the "Enter" button
     const handleEnter = (btn) => {
         if (btn === "Reset" ){
             return resetClickHandler 
         }if (btn === "Enter") {
-            return 
+            return //Store the ScreenDisplay value and make Button values invisible and random
         }else {return numClickHandler}
 
     }
-    
 
+    // Components within this block have props
     return (
         <div className="wrapper gameWrap">
             <div className="headIntro">
@@ -71,7 +78,7 @@ export default function Numlock () {
                 <h3>Let's get playing</h3>
             </div>
             <Wrapper>
-                    <ScreenDisplay value={display} />
+                <ScreenDisplay value={display} />
                 <ButtonBox>
                     {
                     btnValues.flat().map((btn, i) => {
